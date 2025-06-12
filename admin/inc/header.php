@@ -52,7 +52,7 @@ header("Cache-Control: max-age=2592000");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phòng khám chuyên khoa An Đông clinic</title>
+    <title>Phòng khám chuyên khoa An Đông</title>
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../css/toastr.min.css" />
