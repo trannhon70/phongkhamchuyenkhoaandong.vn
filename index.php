@@ -90,6 +90,35 @@
                 </div>
                 <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/banner/section4_chat_luong.webp" alt="...">
             </section>
+
+            <section class="section5">
+                <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/banner/section5_banner.webp" alt="...">
+                <div class="section5__body">
+                   <div class="section5__body_title">
+                        hệ thống cơ sở vật chất tại phòng khám
+                    </div>
+                    <div class="section5__body_list" >
+                        <div class="section5__body_list_item" >
+                            <div class="section5__body_list_item_title" >
+                                1 bác sĩ <br/> 1 bệnh nhân
+                            </div>
+                            <img loading="lazy" width="150px" height="100%" src="<?php echo $local ?>/images/icons/icon_benh_nhan.webp" alt="...">
+                        </div>
+                        <div class="section5__body_list_item" >
+                            <div class="section5__body_list_item_title" >
+                                vô vàn <br/> ưu đãi
+                            </div>
+                            <img loading="lazy" width="150px" height="100%" src="<?php echo $local ?>/images/icons/icon_uu_dai.webp" alt="...">
+                        </div>
+                        <div class="section5__body_list_item" >
+                            <div class="section5__body_list_item_title" >
+                               bảo mật <br/> thông tin
+                            </div>
+                            <img loading="lazy" width="150px" height="100%" src="<?php echo $local ?>/images/icons/icon_thong_tin.webp" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article>
     </main>
 
