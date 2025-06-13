@@ -6,7 +6,7 @@ define("DB_NAME", "phongkhamandong.vn");
 
 
 // define("DB_HOST", "localhost");
-// define("DB_USER", "andongclinic_vn");
-// define("DB_PASS", "1FntzAfcYwM8wCZX");
-// define("DB_NAME", "andongclinic_vn");  
+// define("DB_USER", "pkckandong_vn");
+// define("DB_PASS", "3mwhntkcyxiibJyy");
+// define("DB_NAME", "pkckandong_vn");  
 ?>
