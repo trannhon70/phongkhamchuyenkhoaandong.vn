@@ -117,10 +117,10 @@ setcookie(
 
             } else {
                 const desktopLink = [
-                    // {
-                    //     href: 'css/header.min.css',
-                    //     id: 'desktop-0'
-                    // },
+                    {
+                        href: 'css/header.min.css',
+                        id: 'desktop-0'
+                    },
                     // {
                     //     href: 'css/footer.min.css',
                     //     id: 'desktop-1'

@@ -6,50 +6,48 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <div class="header__top">
-            chuyên khoa khám chữa bệnh An Đông
-        </div>
-        <div class="header__bottom">
-            <div class="header__bottom_left">
-            </div>
-            <div class="header__bottom_right" >
-            </div>
-            <div class="header__bottom_body">
-                <div class="header__bottom_body_menu">
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item header__bottom_body_menu_item_border">
-                        <img width="35px" height="35px" loading="lazy" src="<?php echo $local ?>/images/icons/icon_home.webp" alt="...">
-                    </a>
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item header__bottom_body_menu_item_dm">
-                        DANH MỤC BỆNH
-                        <img width="15px" height="15px" loading="lazy" src="<?php echo $local ?>/images/icons/icon_down.webp" alt="...">
-                    </a>
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item">
-                        GIỚI THIỆU
-                    </a>
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item">
-                        BÁC SĨ
-                    </a>
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item">
-                        CƠ SỞ VẬT CHẤT
-                    </a>
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item">
-                        LIÊN HỆ
-                    </a>
-                    <a href="<?php echo $local ?>" class="header__bottom_body_menu_item header__bottom_body_menu_item_border1">
-                        <img width="40px" height="40px" loading="lazy" src="<?php echo $local ?>/images/icons/icon_chat.webp" alt="...">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="header__banner" >
-            <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_pc.webp" alt="...">
-        </div>
-    </header>
+    <?php include_once "./layout/header_layout.php" ?>
     <main>
         <article>
-            <section>
-                <div></div>
+            <section class="section">
+                <div class="section__left">
+                    <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/section_pc.webp" alt="...">
+                </div>
+                <div class="section__right">
+                    <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/section_chi_tiet.webp" alt="...">
+                </div>
+            </section>
+
+            <section class="section1">
+                <div class="section1__title">BÁC SĨ CHUYÊN KHOA</div>
+                <div class="section1__list">
+                    <div class="section1__list_item">
+                        <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/section1_bacsi.webp" alt="...">
+                    </div>
+                    <div class="section1__list_item">
+                        <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/section1_bacsi.webp" alt="...">
+                    </div>
+                    <div class="section1__list_item">
+                        <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/section1_bacsi.webp" alt="...">
+                    </div>
+                    <div class="section1__list_item">
+                        <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/section1_bacsi.webp" alt="...">
+                    </div>
+                </div>
+                <div class="section1__bottom">
+                    <div class="section1__bottom_left">
+                        Đặt lịch tư vấn
+                        <img loading="lazy" width="25px" height="25px" src="<?php echo $local ?>/images/icons/icon_heat.webp" alt="...">
+                    </div>
+                    <div class="section1__bottom_right">
+                        <div class="section1__bottom_right_item" >
+                            <img loading="lazy" width="25px" height="25px" src="<?php echo $local ?>/images/icons/icon_prev.webp" alt="...">
+                        </div>
+                        <div class="section1__bottom_right_item" >
+                            <img loading="lazy" width="25px" height="25px" src="<?php echo $local ?>/images/icons/icon_next.webp" alt="...">
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
     </main>
