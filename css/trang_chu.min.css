@@ -1,0 +1,6 @@
+
+.header {
+    width: var(--container);
+    margin: var(--margin-auto);
+    background-color: aqua;
+}

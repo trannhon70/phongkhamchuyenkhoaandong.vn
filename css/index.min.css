@@ -52,7 +52,7 @@
 
 }
 
-body {
+body { 
     margin: var(--margin-auto);
     width: var(--width-100);
     height: auto;
