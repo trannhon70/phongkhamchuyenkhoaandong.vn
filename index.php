@@ -7,7 +7,7 @@
 
 <body>
     <?php include_once "./layout/header_layout.php" ?>
-    <main>
+     <main>
         <article>
             <section class="section">
                 <div class="section__left">
@@ -18,7 +18,7 @@
                 </div>
             </section>
 
-            <section class="section1">
+          <section class="section1">
                 <div class="section1__title">BÁC SĨ CHUYÊN KHOA</div>
                 <div class="section1__list">
                     <div class="section1__list_item">
@@ -54,7 +54,7 @@
                 <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_1.webp" alt="...">
             </section>
 
-            <section class="section3">
+             <section class="section3">
                 <div class="section3__body">
                     <div class="section3__body_left">
                         <div class="section3__body_left_title">
@@ -91,8 +91,8 @@
                 <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/banner/section4_chat_luong.webp" alt="...">
             </section>
             <?php include_once "./layout/hethong_layout.php" ?>
-            </article>
+            
         </article>
-    </main>
+    </main> 
 
     <?php include_once "inc/footer.php" ?>
