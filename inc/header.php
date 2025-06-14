@@ -71,9 +71,11 @@ setcookie(
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <link rel="preload" href="css/@media.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
+    <link rel="preload" href="css/hethong_layout.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <noscript>
         <link rel="stylesheet" href="css/index.min.css">
         <link rel="stylesheet" href="css/@media.min.css">
+        <link rel="stylesheet" href="css/hethong_layout.min.css">
     </noscript>
     <script>
         function updateHeaderStylesheet() {
