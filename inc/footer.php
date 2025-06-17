@@ -1,14 +1,7 @@
  <footer id="footer" class="footer">
      <div class="footer__top">
-         <a href="<?php echo $local ?>" class="footer__top_item">
-             <img loading="lazy" width="250px" height="50px" src="<?php echo $local ?>/images/icons/icon_dangky.webp" alt="...">
-         </a>
-         <a href="<?php echo $local ?>" class="footer__top_item">
-             <img loading="lazy" width="250px" height="50px" src="<?php echo $local ?>/images/icons/icon_tuvan.webp" alt="...">
-         </a>
-         <a href="<?php echo $local ?>" class="footer__top_item">
-             <img loading="lazy" width="250px" height="50px" src="<?php echo $local ?>/images/icons/icon_zalo.webp" alt="...">
-         </a>
+             <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/bg_footer.webp" alt="...">
+        
      </div>
      <div class="footer__bottom">
          <div class="footer__bottom_body">
@@ -24,9 +17,7 @@
                     <div class="footer__bottom_body_list_item_card" >
                         <strong>Hotline: </strong> 0968 063 109
                     </div>
-                    <div class="footer__bottom_body_list_item_card" >
-                        <strong>Email: </strong> pkdkad360@gmail.com
-                    </div>
+                    
                 </div>
                 <div class="footer__bottom_body_list_item" >
                     <div class="footer__bottom_body_list_item_card" >

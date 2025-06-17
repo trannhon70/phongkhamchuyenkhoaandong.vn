@@ -37,7 +37,7 @@
                     <img loading="lazy" width="40px" height="40px" src="<?php echo $local ?>/images/icons/icon_reply.webp" alt="...">
                 </div>
                 <div class="section6_list_item_body_right">
-                    Mình bị mụn nội tiết khá lâu, dùng nhiều loại mỹ phẩm nhưng không đỡ. Được bạn bè giới thiệu phòng khám, mình đặt lịch khám online rất tiện lợi. Bác sĩ tư vấn cặn kẽ, đưa phác đồ điều trị rõ ràng, da được soi bằng máy hiện đại nên rất yên tâm. Sau 1 tháng điều trị, mụn viêm đã giảm rõ rệt, da đỡ sưng đỏ hẳn.
+                   Mình được bạn bè giới thiệu đến Chuyên khoa An Đông. Tại đây, các bác sĩ vô cùng có tâm với nghề, nên mình cũng thoải mái chia sẻ những vấn đề mình đang gặp phải. Sau điều trị, mình cảm thấy sức khỏe cải thiện hơn
                 </div>
             </div>
             <div class="section6_list_item_bottom">
@@ -54,8 +54,7 @@
                     <img loading="lazy" width="40px" height="40px" src="<?php echo $local ?>/images/icons/icon_reply.webp" alt="...">
                 </div>
                 <div class="section6_list_item_body_right">
-                    Mình hay bị viêm da tiếp xúc khi thay đổi thời tiết, đặc biệt là vùng cổ và mặt.
-                    <br />Tới phòng khám, mình được test phản ứng da và chẩn đoán rõ ràng. Thuốc được kê vừa đủ dùng, không lạm dụng. Bác sĩ theo dõi hậu thăm khám rất tận tình. Sau 10 ngày thì tình trạng đỏ da và ngứa ngáy đã giảm hẳn.
+                     Tôi rất hài lòng với dịch vụ tại phòng khám. Các bác sĩ rất tận tình, giải thích rõ ràng về bệnh tình và phương pháp điều trị. Không gian khám bệnh sạch sẽ, thoải mái, giúp tôi cảm thấy yên tâm hơn.
                 </div>
             </div>
             <div class="section6_list_item_bottom">

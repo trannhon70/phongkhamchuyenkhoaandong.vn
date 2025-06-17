@@ -6,13 +6,15 @@
     margin: var(--margin-auto);
     display: var(--display-flex);
     align-items: var(--center);
-    justify-content: var(--center);
-    font-size: var(--font-size-20);
-    font-weight: var(--font-weight-700);
+    justify-content: space-between;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
     text-transform: var(--uppercase);
-    color: var(--color-black);
+    color: var(--color-2A7438);
     height: 50px;
 }
+
+
 
 .header__bottom {
     height: 50px;

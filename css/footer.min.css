@@ -9,9 +9,7 @@
     align-items: var(--center);
     gap: 15px;
 }
-.footer__top_item > img {
-    transform: translate(0px, 8px);
-}
+
 
 .footer__bottom{
     background-color: var(--background-color-2A7438);
