@@ -43,8 +43,8 @@
             <div class="section6_list_item_bottom">
                 <img loading="lazy" width="50px" height="50px" src="<?php echo $local ?>/images/icons/icon_user1.webp" alt="...">
                 <div>
-                    <strong>Chị T.T.T.T</strong>
-                    <div>25 tuổi, Bắc Ninh</div>
+                    <strong>Anh T.T.T.T</strong>
+                    <div>25 tuổi, HCM</div>
                 </div>
             </div>
         </div>
@@ -60,8 +60,8 @@
             <div class="section6_list_item_bottom">
                 <img loading="lazy" width="50px" height="50px" src="<?php echo $local ?>/images/icons/icon_user2.webp" alt="...">
                 <div>
-                    <strong>Chị T.A.H</strong>
-                    <div>30 tuổi, Hà Nội</div>
+                    <strong>Anh T.A.H</strong>
+                    <div>30 tuổi, Long An</div>
                 </div>
             </div>
         </div>
