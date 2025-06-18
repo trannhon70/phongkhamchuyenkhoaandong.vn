@@ -34,16 +34,17 @@
  <footer class="footer__mobile">
      <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/background/footer_mobile.gif" alt="...">
      <div class="footer__mobile_list" >
-        <a class="footer__mobile_list_left" href="tel:+0968063109">
-             <p class="randum__number">
-             10
-         </p>
+        <a class="footer__mobile_list_left" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            <p class="randum__number">
+                10
+            </p>
         </a>
         <a class="footer__mobile_list_center" href="tel:+0968063109"></a>
         <a class="footer__mobile_list_right" href="https://zalo.me/0968063109" target="_blank" rel="noopener noreferrer"></a>
      </div>
  </footer>
 
+ <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
 
  <script defer>
      function updateHeaderScripts() {
