@@ -33,7 +33,7 @@
  </footer>
 
 
- <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
+
 
  <script defer>
      function updateHeaderScripts() {

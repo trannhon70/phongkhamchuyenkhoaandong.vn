@@ -145,6 +145,7 @@ setTitleAndScroll();
      </div>
  </footer>
         <script defer src="<?php echo $local ?>/js/sidebar_mobile.min.js"></script>
+         <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
         <script defer>
             function applyCSSandJS() {
 
