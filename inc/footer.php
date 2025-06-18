@@ -1,7 +1,7 @@
  <footer id="footer" class="footer">
      <div class="footer__top">
-             <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/bg_footer.webp" alt="...">
-        
+         <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/bg_footer.webp" alt="...">
+
      </div>
      <div class="footer__bottom">
          <div class="footer__bottom_body">
@@ -9,26 +9,38 @@
                  <img loading="lazy" width="97px" height="97px" src="<?php echo $local ?>/images/logo/logo_footer.webp" alt="...">
                  chuyên khoa khám chữa bệnh An Đông
              </div>
-             <div class="footer__bottom_body_list" >
-                <div class="footer__bottom_body_list_item" >
-                    <div class="footer__bottom_body_list_item_card" >
-                        <strong>Địa chỉ: </strong> 360 An Dương Vương, P.4, Q.5, TP.HCM 
-                    </div>
-                    <div class="footer__bottom_body_list_item_card" >
-                        <strong>Hotline: </strong> 028 7777 9888
-                    </div>
-                    
-                </div>
-                <div class="footer__bottom_body_list_item" >
-                    <div class="footer__bottom_body_list_item_card" >
-                        <strong>Thời gian làm việc: </strong>  8:00 - 20:00
-                    </div>
-                    <div class="footer__bottom_body_list_item_card" >
-                        Tất cả các ngày trong tuần, kể cả ngày lễ
-                    </div>
-                </div>
+             <div class="footer__bottom_body_list">
+                 <div class="footer__bottom_body_list_item">
+                     <div class="footer__bottom_body_list_item_card">
+                         <strong>Địa chỉ: </strong> 360 An Dương Vương, P.4, Q.5, TP.HCM
+                     </div>
+                     <div class="footer__bottom_body_list_item_card">
+                         <strong>Hotline: </strong> 028 7777 9888
+                     </div>
+
+                 </div>
+                 <div class="footer__bottom_body_list_item">
+                     <div class="footer__bottom_body_list_item_card">
+                         <strong>Thời gian làm việc: </strong> 8:00 - 20:00
+                     </div>
+                     <div class="footer__bottom_body_list_item_card">
+                         Tất cả các ngày trong tuần, kể cả ngày lễ
+                     </div>
+                 </div>
              </div>
          </div>
+     </div>
+ </footer>
+ <footer class="footer__mobile">
+     <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/background/footer_mobile.gif" alt="...">
+     <div class="footer__mobile_list" >
+        <a class="footer__mobile_list_left" href="tel:+0968063109">
+             <p class="randum__number">
+             10
+         </p>
+        </a>
+        <a class="footer__mobile_list_center" href="tel:+0968063109"></a>
+        <a class="footer__mobile_list_right" href="https://zalo.me/0968063109" target="_blank" rel="noopener noreferrer"></a>
      </div>
  </footer>
 
@@ -44,10 +56,10 @@
          // Thêm script mới dựa trên kích thước cửa sổ
          if (window.innerWidth < 1000) {
              const mobileScripts = [
-                 // {
-                 //      src: 'js/sidebar_mobile.min.js',
-                 //      id: 'mobile-0'
-                 //  },
+                 {
+                      src: 'js/random_number.min.js',
+                      id: 'mobile-0'
+                  },
 
 
              ];

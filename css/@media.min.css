@@ -1,5 +1,6 @@
 .header__mobile,
-.header {
+.header,
+.footer__mobile {
     display: none;
 }
 
@@ -10,7 +11,8 @@
 }
 
 @media only screen and (max-width: 999px) {
-    .header__mobile {
+    .header__mobile,
+    .footer__mobile {
         display: block !important;
     }
     .section {
@@ -84,7 +86,9 @@
         padding: 10px !important;
         box-sizing: border-box !important;
     }
-
+    .footer{
+        margin-bottom: 100px !important;
+    }
     .footer__top {
         width: 100% !important;
     }
