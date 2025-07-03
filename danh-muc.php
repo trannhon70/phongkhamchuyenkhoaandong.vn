@@ -41,11 +41,11 @@ function setTitleAndScroll()
         echo "<meta name='keywords' content='$safeKeywords'>\n";
         echo "<meta property='og:title' content='$safeTitle'>\n";
         echo "<meta property='og:description' content='$safeDescription'>\n";
-        echo "<meta property='og:image' content='https://andongclinic.vn/admin/uploads/$safeImage'>\n";
+        echo "<meta property='og:image' content='https://phongkhamchuyenkhoaandong.vn/admin/uploads/$safeImage'>\n";
         echo "<meta property='og:image:width' content='1200'>\n";
         echo "<meta property='og:image:height' content='630'>\n";
         echo "<meta property='og:type' content='article'>\n";
-        echo "<meta property='og:url' content='https://andongclinic.vn/{$getPostDetail['slug']}.html'>\n";
+        echo "<meta property='og:url' content='https://phongkhamchuyenkhoaandong.vn/{$getPostDetail['slug']}.html'>\n";
     }
 }
 setTitleAndScroll();
