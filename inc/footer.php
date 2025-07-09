@@ -33,7 +33,7 @@
  </footer>
 
 
-
+ <?php include_once './layout/modalKhuyenMai.php' ?>
 
  <script defer>
      function updateHeaderScripts() {
