@@ -46,8 +46,8 @@
         font-size: 25px;
         font-weight: bold;
         position: absolute;
-        top: -18px;
-        right: -28px;
+        top: -34px;
+        right: 43%;
         border: 3px solid;
         border-radius: 50%;
         padding: 0px 7px;
