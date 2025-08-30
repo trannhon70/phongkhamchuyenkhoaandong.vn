@@ -66,18 +66,7 @@ setcookie(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZH0L8X1ZR"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QZH0L8X1ZR');
-    </script>
     <link rel="preload" fetchpriority="high" as="image" href="<?php echo $local ?>/images/banner/banner_mobile.webp"
         type="image/webp">
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
@@ -157,29 +146,40 @@ setcookie(
 
     updateHeaderStylesheet();
     </script>
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZH0L8X1ZR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <!-- <script>
+    gtag('config', 'G-QZH0L8X1ZR');
+    </script> -->
+
+    <script>
     // Chỉ tải Google Analytics khi người dùng cuộn xuống
     document.addEventListener('scroll', function loadGA() {
         console.log('Người dùng cuộn xuống - Tải Google Analytics');
-        
         // Tạo thẻ script
         var g = document.createElement('script'),
             s = document.scripts[0];
-        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-XWJ4VGC40M';
+        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-QZH0L8X1ZR';
         g.async = true;
         s.parentNode.insertBefore(g, s);
-
         // Cấu hình gtag
-        g.onload = function () {
+        g.onload = function() {
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-XWJ4VGC40M');
-        };
 
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-QZH0L8X1ZR');
+        };
         // Xóa sự kiện lắng nghe để không tải lại
         document.removeEventListener('scroll', loadGA);
     });
-</script> -->
+    </script>
