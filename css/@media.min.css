@@ -1,6 +1,7 @@
 .header__mobile,
 .header,
-.footer__mobile {
+.footer__mobile,
+#cardbs {
     display: none;
 }
 
@@ -12,7 +13,8 @@
 
 @media only screen and (max-width: 999px) {
     .header__mobile,
-    .footer__mobile {
+    .footer__mobile,
+    #cardbs {
         display: block !important;
     }
     .section {
@@ -23,9 +25,6 @@
     .section__right {
         width: 100% !important;
     }
-
-    
-    
 
     .section4 {
         width: var(--width-100) !important;
@@ -86,7 +85,7 @@
         padding: 10px !important;
         box-sizing: border-box !important;
     }
-    .footer{
+    .footer {
         margin-bottom: 80px !important;
     }
     .footer__top {
@@ -135,28 +134,28 @@
         width: 100% !important;
         height: 225px !important;
     }
-    
+
     .img-gif {
         width: 100% !important;
         height: auto !important;
         border-radius: 8px !important;
     }
 
-    .procedure{
+    .procedure {
         width: var(--width-100) !important;
     }
 
-    .procedure__title{
+    .procedure__title {
         width: var(--width-100) !important;
         font-size: var(--font-size-16) !important;
         box-sizing: border-box;
     }
 
-    .procedure__list_item{
+    .procedure__list_item {
         width: 49% !important;
     }
 
-    .procedure__list_item_title{
+    .procedure__list_item_title {
         font-size: var(--font-size-18) !important;
     }
 

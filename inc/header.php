@@ -58,8 +58,8 @@ $dbReadTotalTime = ($dbReadEndTime - $dbReadStarTime) / 1e+6;
 
 header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-$local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
-// $local ='https://phongkhamchuyenkhoaandong.vn'
+// $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
+$local = 'https://phongkhamchuyenkhoaandong.vn'
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -151,19 +151,6 @@ $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
 
         updateHeaderStylesheet();
     </script>
-    <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZH0L8X1ZR"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QZH0L8X1ZR');
-    </script> -->
-
     <script>
         // Chỉ tải Google Analytics khi người dùng cuộn xuống
         document.addEventListener('scroll', function loadGA() {

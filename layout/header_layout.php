@@ -70,7 +70,7 @@
                 alt="...">
         </div>
     </div>
-    <div class="header__mobile_banner swiper">
+    <div class="header__mobile_banner swiper swiper-2">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_mobile.webp"
@@ -85,17 +85,3 @@
         <div class="swiper-pagination"></div>
     </div>
 </header>
-
-<script defer>
-var swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-        delay: 3000
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    },
-
-});
-</script>

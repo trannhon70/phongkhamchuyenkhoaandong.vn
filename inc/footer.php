@@ -1,12 +1,14 @@
  <footer id="footer" class="footer">
      <div class="footer__top">
-         <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/bg_footer.webp" alt="...">
+         <img loading="lazy" width="100%" height="100%" src="<?php echo $local ?>/images/background/bg_footer.webp"
+             alt="...">
 
      </div>
      <div class="footer__bottom">
          <div class="footer__bottom_body">
              <div class="footer__bottom_body_title">
-                 <img loading="lazy" width="97px" height="97px" src="<?php echo $local ?>/images/logo/logo_footer.webp" alt="...">
+                 <img loading="lazy" width="97px" height="97px" src="<?php echo $local ?>/images/logo/logo_footer.webp"
+                     alt="...">
                  chuyên khoa khám chữa bệnh An Đông
              </div>
              <div class="footer__bottom_body_list">
@@ -45,11 +47,10 @@
 
          // Thêm script mới dựa trên kích thước cửa sổ
          if (window.innerWidth < 1000) {
-             const mobileScripts = [
-                 {
-                      src: 'js/random_number.min.js',
-                      id: 'mobile-0'
-                  },
+             const mobileScripts = [{
+                     src: 'js/random_number.min.js',
+                     id: 'mobile-0'
+                 },
 
 
              ];
@@ -122,6 +123,29 @@
      });
  </script>
 
+ <script defer>
+     var swiper = new Swiper('.swiper-2', {
+         loop: true,
+         autoplay: {
+             delay: 3000
+         },
+         pagination: {
+             el: '.swiper-pagination',
+             clickable: true
+         },
+
+     });
+     var swiper1 = new Swiper('.swiper-1', {
+         loop: true,
+         autoplay: {
+             delay: 5000,
+         },
+         pagination: {
+             el: '.swiper-1 .swiper-pagination',
+             clickable: true,
+         },
+     });
+ </script>
  </body>
 
  </html>
