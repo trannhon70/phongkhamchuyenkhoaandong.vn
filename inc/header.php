@@ -58,8 +58,8 @@ $dbReadTotalTime = ($dbReadEndTime - $dbReadStarTime) / 1e+6;
 
 header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-// $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
-$local = 'https://phongkhamchuyenkhoaandong.vn'
+$local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
+// $local = 'https://phongkhamchuyenkhoaandong.vn'
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
