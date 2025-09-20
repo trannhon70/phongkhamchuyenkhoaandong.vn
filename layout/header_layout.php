@@ -76,10 +76,10 @@
                 <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_mobile.webp"
                     alt="Banner 1">
             </div>
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
                 <img loading="lazy" width="100%" height="100%"
                     src="<?php echo $local ?>/images/banner/banner_mobile_2t9.webp" alt="Banner 2">
-            </div>
+            </div> -->
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
