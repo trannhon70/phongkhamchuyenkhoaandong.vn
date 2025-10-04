@@ -64,6 +64,7 @@ setTitleAndScroll();
 <body>
     <?php if (isset($getPostDetail)) { ?>
         <?php include "layout/header_layout.php" ?>
+        <?php include "layout/notification_layout.php" ?>
         <main>
             <article>
                 <div class="category">
