@@ -108,7 +108,7 @@
     ];
 
     // Thời gian delay cho từng thông báo (ms)
-    const delays = [10000, 10000, 10000, 10000, 10000, 10000]; // 15s, 20s, 20s
+    const delays = [10000, 15000, 20000, 25000, 30000, 35000]; // 15s, 20s, 20s
 
     function showNotification(msg) {
         notification.innerHTML = msg;
@@ -135,7 +135,7 @@
                     nextNotification();
                 } else {
                     // Khi hết 3 thông báo thì chờ 40s rồi mới chạy lại
-                    setTimeout(runCycle, 10000);
+                    setTimeout(runCycle, 30000);
                 }
             }, delays[i]);
         }
