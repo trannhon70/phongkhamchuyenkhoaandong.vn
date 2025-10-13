@@ -7,7 +7,7 @@
             <strong>Hotline tư vấn: 0968 063 109 </strong>
         </div>
         <div class="header__top_center">
-            360 An Dương Vương, P.4, Q.5, TP.HCM
+            360 An Dương Vương, P. Chợ Quán, TP. HCM
         </div>
     </div>
     <div class="header__bottom">

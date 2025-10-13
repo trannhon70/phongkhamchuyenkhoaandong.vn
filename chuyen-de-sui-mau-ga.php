@@ -407,7 +407,7 @@ $slides = [
                 </a>
             </div>
             <div>
-                <strong>ĐỊA CHỈ: </strong> <span>360 An Dương Vương, P.4, Q.5, TP.HCM</span>
+                <strong>ĐỊA CHỈ: </strong> <span>Số 360 đường An Dương Vương, Phường Chợ Quán, TP Hồ Chí Minh</span>
             </div>
         </div>
     </section>
