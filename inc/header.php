@@ -6,6 +6,11 @@ Session::init();
 ob_start("ob_gzhandler");
 header("Timing-Allow-Origin: *");
 header("Cache-Control: public, max-age=31536000, must-revalidate");
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: SAMEORIGIN');
+header('X-XSS-Protection: 1; mode=block');
+header('Referrer-Policy: no-referrer-when-downgrade');
+header('Permissions-Policy: geolocation=(), microphone=()');
 // Danh sách IP bị chặn
 $blocked_ips = ['115.78.128.131'];
 
@@ -34,7 +39,7 @@ setcookie(
     [
         "expires" => time() + 3600, // Thời gian hết hạn (1 giờ)
         "path" => "/",              // Đường dẫn
-        "domain" => "https://phongkhamchuyenkhoaandong.vn",  // Tên miền (tuỳ chỉnh)
+        "domain" => "phongkhamchuyenkhoaandong.vn",  // Tên miền (tuỳ chỉnh)
         "secure" => true,           // Chỉ gửi qua HTTPS
         "httponly" => true,         // Chỉ gửi cookie qua HTTP (không JavaScript)
         "samesite" => "None"        // SameSite=None
@@ -58,8 +63,8 @@ $dbReadTotalTime = ($dbReadEndTime - $dbReadStarTime) / 1e+6;
 
 header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-$local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
-// $local = 'https://phongkhamchuyenkhoaandong.vn'
+// $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
+$local = 'https://phongkhamchuyenkhoaandong.vn'
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -67,6 +72,7 @@ $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index, follow">
 
     <link rel="preload" fetchpriority="high" as="image" href="<?php echo $local ?>/images/banner/banner_mobile.webp"
         type="image/webp">
@@ -177,8 +183,7 @@ $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17187020994">
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17187020994"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -188,4 +193,11 @@ $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
         gtag('js', new Date());
 
         gtag('config', 'AW-17187020994');
+    </script>
+
+    <!-- Event snippet for Lượt xem trang conversion page -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17187020994/bnLACJLd4dwaEMLBtINA'
+        });
     </script>
