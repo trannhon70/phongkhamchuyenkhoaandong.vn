@@ -14,10 +14,10 @@
              <div class="footer__bottom_body_list">
                  <div class="footer__bottom_body_list_item">
                      <div class="footer__bottom_body_list_item_card">
-                         <strong>Địa chỉ: </strong> 360 An Dương Vương, P.4, Q.5, TP.HCM
+                         <strong>Địa chỉ: </strong> Số 360 đường An Dương Vương, Phường Chợ Quán, TP Hồ Chí Minh
                      </div>
                      <div class="footer__bottom_body_list_item_card">
-                         <strong>Hotline: </strong> 028 7777 9888
+                         <strong>Hotline: </strong> 0968 063 109
                      </div>
 
                  </div>
