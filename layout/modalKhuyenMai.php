@@ -44,15 +44,18 @@
     .closeKM {
         color: red;
         float: right;
-        font-size: 25px;
+        font-size: 50px;
         font-weight: bold;
         position: absolute;
-        top: 21px;
-        right: 3%;
+        top: -30px;
+        right: 40%;
         border-radius: 50%;
         display: block;
         width: 50px;
         height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .closeKM:hover,
@@ -71,10 +74,6 @@
             animation-name: slidein;
         }
 
-        .closeKM {
-            font-size: 20px;
-            padding: 0px 5px;
-        }
     }
 </style>
 
@@ -82,7 +81,7 @@
 <div id="myModalKM" class="modal">
     <div class="modal-content">
         <div style="position: relative;">
-            <span class="closeKM" id="closeModalKM"></span>
+            <span class="closeKM" id="closeModalKM">×</span>
             <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
                 <img loading="lazy" style="border: 1px solid success; border-radius: 8px; " width="100%" height="auto"
                     src="<?php echo $local ?>/images/users/bac_si_tu_van.webp" alt="...">
