@@ -144,37 +144,37 @@ setTitleAndScroll();
                                                     <div class="cardbs__body-right-ct">
                                                         Từng công tác tại Bệnh viện Chuyên khoa Xanh Pôn Hà Nội
                                                     </div>
-                                                    <!-- <a style="display: flex; align-items: center; justify-content: flex-end;"
-                                                href="<?php echo $local ?>/chuyen-de-sui-mau-ga.php">xem
-                                                thêm...</a> -->
+                                                    <a style="display: flex; align-items: center; justify-content: flex-end;"
+                                                        href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">xem
+                                                        thêm...</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="swiper-slide">
-                                <div class="cardbs">
-                                    <div class="cardbs__body">
-                                        <div class="cardbs__body-left">
-                                            <img loading="lazy" width="100%"
-                                                src="<?php echo $local ?>/images/icons/icon_bs1.webp" alt="...">
-                                        </div>
-                                        <div class="cardbs__body-right">
-                                            <div class="cardbs__body-right-bs">
-                                                BS NGUYỄN BẠCH VÂN THỦY
+                                    <div class="swiper-slide">
+                                        <div class="cardbs">
+                                            <div class="cardbs__body">
+                                                <div class="cardbs__body-left">
+                                                    <img loading="lazy" width="100%"
+                                                        src="<?php echo $local ?>/images/icons/icon_bs1.webp" alt="...">
+                                                </div>
+                                                <div class="cardbs__body-right">
+                                                    <div class="cardbs__body-right-bs">
+                                                        BS NGUYỄN BẠCH VÂN THỦY
+                                                    </div>
+                                                    <div class="cardbs__body-right-ck">
+                                                        Chuyên khoa ngoại
+                                                    </div>
+                                                    <div class="cardbs__body-right-ct">
+                                                        Từng công tác tại Bệnh viện Quận Thủ Đức
+                                                    </div>
+                                                    <a style="display: flex; align-items: center; justify-content: flex-end;"
+                                                        href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">xem
+                                                        thêm...</a>
+                                                </div>
                                             </div>
-                                            <div class="cardbs__body-right-ck">
-                                                Chuyên khoa ngoại
-                                            </div>
-                                            <div class="cardbs__body-right-ct">
-                                                Từng công tác tại Bệnh viện Quận Thủ Đức
-                                            </div>
-                                            <a style="display: flex; align-items: center; justify-content: flex-end;"
-                                                href="<?php echo $local ?>/#">xem
-                                                thêm...</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div> -->
                                 </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
