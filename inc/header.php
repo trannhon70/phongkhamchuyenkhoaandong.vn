@@ -76,7 +76,7 @@ $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
 
     <link rel="preload" fetchpriority="high" as="image" href="<?php echo $local ?>/images/banner/banner_mobile.webp"
         type="image/webp">
-    <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
+    <link rel="icon" href="<?php echo $local ?>/images/logo/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <link rel="preload" href="css/@media.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <link rel="preload" href="css/hethong_layout.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
