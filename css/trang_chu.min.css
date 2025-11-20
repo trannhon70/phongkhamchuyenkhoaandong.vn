@@ -1,7 +1,6 @@
 .section,
 .section4,
-.procedure
-{
+.procedure {
     width: var(--container);
     margin: var(--margin-auto);
 }
@@ -16,7 +15,6 @@
 .section__right {
     width: 49%;
 }
-
 
 .section4 {
     margin-top: 20px;
@@ -44,8 +42,7 @@
     width: 50%;
 }
 
-
-.procedure__title{
+.procedure__title {
     background-color: var(--background-color-2A7438);
     padding: 10px;
     font-size: var(--font-size-32);
@@ -56,10 +53,9 @@
     text-align: var(--center);
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-
 }
 
-.procedure__list{
+.procedure__list {
     display: var(--display-flex);
     align-items: var(--center);
     justify-content: space-between;
@@ -69,7 +65,7 @@
     flex-wrap: wrap;
 }
 
-.procedure__list_item{
+.procedure__list_item {
     width: 32%;
     background: linear-gradient(180deg, rgba(92, 181, 75, 0.1) 0%, rgba(255, 255, 255, 0.5) 75.49%);
     border-top-left-radius: 30px;
@@ -81,8 +77,6 @@
     box-sizing: border-box;
 }
 
-.procedure__list_item_title{
+.procedure__list_item_title {
     color: var(--color-2A7438);
 }
-
-

@@ -34,9 +34,71 @@
      </div>
  </footer>
 
+ <footer id="footer__mobile" class="footer__mobile">
+     <div class="footer__mobile_layout">
+         <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/banner/banner_4.webp" alt="..."
+             layout="responsive">
+         <img class="footer__mobile_layout_img" loading="lazy" width="60%" height="auto"
+             src="<?php echo $local ?>/images/banner/banner_5.webp" alt="..." layout="responsive">
+     </div>
+     <div class="footer__mobile_bottom">
+         <div class="footer__mobile_bottom_top">
+             <img width="60px" src="<?php echo $local ?>/images/logo/icon_logo.webp" alt="...">
+             <div class="footer__mobile_bottom_top_right">
+                 <h5>Phòng khám</h5>
+                 <span>Chuyên Khoa TP HCM</span>
+             </div>
+         </div>
+         <div class="footer__mobile_bottom_location">
+             <img width="20px" src="<?php echo $local ?>/images/icons/icon_location.webp" alt="...">
+             <div>An Dương Vương, P. Chợ Quán, Tp. HCM</div>
+         </div>
+
+         <div class="footer__mobile_bottom_location">
+             <img width="20px" src="<?php echo $local ?>/images/icons/icon_phone.webp" alt="...">
+             <div>Hotline: <strong>0968 063 109</strong></div>
+         </div>
+     </div>
+ </footer>
+ <section id="footer_mobileFix">
+     <div class="footer_mobileFix_body">
+         <img style="position: absolute; top: 3px; right: 40%;" loading="lazy" width="50px" height="auto"
+             src="<?php echo $local ?>/images/icons/icon_footer_animation.gif" alt="..." layout="responsive">
+         </img>
+         <img style="width: 100%; height: auto;" loading="lazy"
+             src="<?php echo $local ?>/images/background/footer_mobile.gif" alt="...">
+         <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; display: flex;">
+             <a style="display: block; width: 50%; ; height: 60px;"
+                 href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+             <a style="display: block; width: 50%; ; height: 60px;" href="tel:02877779888"></a>
+         </div>
+     </div>
+ </section>
 
  <?php include_once './layout/modalKhuyenMai.php' ?>
+ <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
+ <script>
+     // xóa component khi ở lich-kham
+     const currentPage = "<?php echo basename($_SERVER['PHP_SELF']); ?>";
+     const headerNoIndex = document.querySelector('.header_mobile_no_index');
+     const headerIndex = document.querySelector('.header_mobile_index');
+     console.log(currentPage);
 
+     if (currentPage === "lich-kham.php") {
+         document.querySelectorAll('.footer__mobile_layout').forEach(a => {
+             a.style.display = "none";
+         });
+     }
+     if (currentPage === "index.php") {
+         const footer = document.getElementById('footer_mobileFix');
+         const footer__mobile = document.getElementById('footer__mobile');
+         footer.remove();
+         footer__mobile.remove();
+         headerNoIndex.remove();
+     } else {
+         headerIndex.remove()
+     }
+ </script>
  <script defer>
      function updateHeaderScripts() {
          // Xóa các script cũ nếu có
@@ -47,10 +109,11 @@
 
          // Thêm script mới dựa trên kích thước cửa sổ
          if (window.innerWidth < 1000) {
-             const mobileScripts = [{
-                     src: 'js/random_number.min.js',
-                     id: 'mobile-0'
-                 },
+             const mobileScripts = [
+                 // {
+                 //      src: 'js/random_number.min.js',
+                 //      id: 'mobile-0'
+                 //  },
 
 
              ];
@@ -108,19 +171,6 @@
      }
 
      deleteComponent()
- </script>
-
- <script>
-     new PerformanceObserver((list) => {
-         const latestEntry = list.getEntries().at(-1);
-
-         if (latestEntry?.element?.getAttribute('loading') == 'lazy') {
-             console.warn('Warning: LCP element was lazy loaded', latestEntry);
-         }
-     }).observe({
-         type: 'largest-contentful-paint',
-         buffered: true
-     });
  </script>
 
  <script defer>

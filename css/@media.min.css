@@ -1,12 +1,15 @@
 .header__mobile,
 .header,
 .footer__mobile,
-#cardbs {
+#cardbs,
+#footer_mobileFix,
+#footer {
     display: none;
 }
 
 @media only screen and (min-width: 1000px) {
-    .header {
+    .header,
+    #footer {
         display: block !important;
     }
 }
@@ -14,7 +17,8 @@
 @media only screen and (max-width: 999px) {
     .header__mobile,
     .footer__mobile,
-    #cardbs {
+    #cardbs,
+    #footer_mobileFix {
         display: block !important;
     }
     .section {
@@ -49,7 +53,7 @@
     .section5__body_title {
         margin: 0px !important;
         font-size: var(--font-size-16) !important;
-        background-color: var(--background-color-2A7438) !important;
+        background-color: #499fa3 !important;
         color: var(--color-white) !important;
         width: var(--width-100) !important;
         padding: 10px !important;
@@ -78,6 +82,7 @@
         width: var(--width-100) !important;
         font-size: var(--font-size-16) !important;
         box-sizing: border-box !important;
+        background-color: #499fa3 !important;
     }
 
     .section6_list_item {
