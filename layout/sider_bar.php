@@ -5,20 +5,20 @@
 
  <ul class="sidebar_mobile">
      <li>
-         <a href="<?php echo $local ?>">Giới thiệu</a>
+         <a href="<?php echo $local ?>/home.html">Giới thiệu</a>
      </li>
 
      <li>
-         <a href="<?php echo $local ?>">Đội ngũ bác sĩ</a>
+         <a href="<?php echo $local ?>/gioi-thieu-bac-si.php">Đội ngũ bác sĩ</a>
      </li>
      <li>
-         <a href="<?php echo $local ?>">lịch khám bệnh viện</a>
+         <a href="<?php echo $local ?>/lich-kham.php">lịch khám bệnh viện</a>
      </li>
      <li>
-         <a href="<?php echo $local ?>">tư vấn trực tuyến</a>
+         <a href="tel:02877779888">tư vấn trực tuyến</a>
      </li>
      <li>
-         <a href="<?php echo $local ?>">đặt lịch</a>
+         <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">đặt lịch</a>
      </li>
 
  </ul>
