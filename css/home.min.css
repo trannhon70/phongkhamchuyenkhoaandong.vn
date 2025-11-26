@@ -32,8 +32,8 @@
 /* //// */
 
 .header__home_baner_absolute {
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 70px;
     left: 0;
     z-index: 999;
     display: flex;
@@ -51,9 +51,10 @@
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
     box-shadow:
         rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -61,7 +62,7 @@
 
 .header__home_baner_absolute_card_text {
     text-align: center;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
     margin-top: 5px;
     color: black;

@@ -13,41 +13,46 @@
     </div>
     <div style="margin-top: 61px; position: relative; " class="header__home_baner">
         <div class="header__home_baner_absolute">
-            <a href="#" class="header__home_baner_absolute_card">
+            <a href="<?php echo $local ?>/gioi-thieu-bac-si.php" class="header__home_baner_absolute_card">
                 <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="80%" height="auto" src="<?php echo $local ?>/images/icons/icon_7.webp"
+                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_7.webp"
                         alt="...">
+                    <div class="header__home_baner_absolute_card_text">
+                        Bác sĩ
+                    </div>
                 </div>
-                <div class="header__home_baner_absolute_card_text">
-                    Bác sĩ
-                </div>
+
             </a>
-            <a href="#" class="header__home_baner_absolute_card">
+            <a href="<?php echo $local ?>/lich-kham.php" class="header__home_baner_absolute_card">
                 <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="80%" height="auto" src="<?php echo $local ?>/images/icons/icon_8.webp"
+                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_8.webp"
                         alt="...">
+                    <div class="header__home_baner_absolute_card_text">
+                        Lịch khám
+                    </div>
                 </div>
-                <div class="header__home_baner_absolute_card_text">
-                    Lịch khám
-                </div>
+
             </a>
-            <a href="#" class="header__home_baner_absolute_card">
+            <a href="https://zalo.me/0968063109" target="_blank" class="header__home_baner_absolute_card">
                 <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="80%" height="auto" src="<?php echo $local ?>/images/icons/icon_9.webp"
+                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_9.webp"
                         alt="...">
+                    <div class="header__home_baner_absolute_card_text">
+                        tư vấn
+                    </div>
                 </div>
-                <div class="header__home_baner_absolute_card_text">
-                    tư vấn
-                </div>
+
             </a>
-            <a href="#" class="header__home_baner_absolute_card">
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+                class="header__home_baner_absolute_card">
                 <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="80%" height="auto" src="<?php echo $local ?>/images/icons/icon_10.webp"
+                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_10.webp"
                         alt="...">
+                    <div class="header__home_baner_absolute_card_text">
+                        Đặt hẹn
+                    </div>
                 </div>
-                <div class="header__home_baner_absolute_card_text">
-                    Đặt hẹn
-                </div>
+
             </a>
         </div>
         <div style="width: 100%; display: flex; align-items: center; justify-content: center;" class="swiper-slide">

@@ -70,7 +70,7 @@
          <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; display: flex;">
              <a style="display: block; width: 50%; ; height: 60px;"
                  href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-             <a style="display: block; width: 50%; ; height: 60px;" href="tel:02877779888"></a>
+             <a style="display: block; width: 50%; ; height: 60px;" href="tel:0968063109"></a>
          </div>
      </div>
  </section>
