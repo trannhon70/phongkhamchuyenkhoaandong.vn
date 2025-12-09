@@ -147,7 +147,7 @@ setTitleAndScroll();
                                         Lượt xem: ...
                                     </div>
                                 </div>
-                                <div class="swiper-wrapper">
+                                <!-- <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="cardbs">
                                             <div class="cardbs__body">
@@ -196,9 +196,9 @@ setTitleAndScroll();
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Add Pagination -->
-                                <div class="swiper-pagination"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
 
                             </div>
                             <div id="bai-viet" class="body-placeholder">
