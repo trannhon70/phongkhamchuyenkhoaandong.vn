@@ -65,49 +65,55 @@
             <?php include "layout/sider_bar.php" ?>
         </div>
     </div>
-    <div style="margin-top: 61px; position: relative; " class="header__home_baner">
+    <div class="header__home_baner">
         <div class="header__home_baner_absolute">
-            <a href="<?php echo $local ?>/gioi-thieu-bac-si.php" class="header__home_baner_absolute_card">
-                <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_7.webp"
-                        alt="...">
-                    <div class="header__home_baner_absolute_card_text">
-                        Bác sĩ
+            <div style=" display: flex; align-items: center; justify-content: space-around; background-color: #459498; padding: 5px 10px; box-sizing: border-box; height: 60px;">
+                <a href="<?php echo $local ?>/gioi-thieu-bac-si.php" class="header__home_baner_absolute_card">
+                    <div class="header__home_baner_absolute_card_body">
+                        <img loading="lazy" width="50%" height="auto" src="<?php echo $local ?>/images/icons/icon_7.webp"
+                            alt="...">
+                        <div class="header__home_baner_absolute_card_text">
+                            Bác sĩ
+                        </div>
                     </div>
-                </div>
 
-            </a>
-            <a href="<?php echo $local ?>/lich-kham.php" class="header__home_baner_absolute_card">
-                <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_8.webp"
-                        alt="...">
-                    <div class="header__home_baner_absolute_card_text">
-                        Lịch khám
+                </a>
+                <a href="<?php echo $local ?>/lich-kham.php" class="header__home_baner_absolute_card">
+                    <div class="header__home_baner_absolute_card_body">
+                        <img loading="lazy" width="50%" height="auto" src="<?php echo $local ?>/images/icons/icon_8.webp"
+                            alt="...">
+                        <div class="header__home_baner_absolute_card_text">
+                            Lịch khám
+                        </div>
                     </div>
-                </div>
 
-            </a>
-            <a href="https://zalo.me/0968063109" target="_blank" class="header__home_baner_absolute_card">
-                <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_9.webp"
-                        alt="...">
-                    <div class="header__home_baner_absolute_card_text">
-                        tư vấn
+                </a>
+                <a href="https://zalo.me/0968063109" target="_blank" class="header__home_baner_absolute_card">
+                    <div class="header__home_baner_absolute_card_body">
+                        <img loading="lazy" width="50%" height="auto" src="<?php echo $local ?>/images/icons/icon_9.webp"
+                            alt="...">
+                        <div class="header__home_baner_absolute_card_text">
+                            tư vấn
+                        </div>
                     </div>
-                </div>
 
-            </a>
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
-                class="header__home_baner_absolute_card">
-                <div class="header__home_baner_absolute_card_body">
-                    <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_10.webp"
-                        alt="...">
-                    <div class="header__home_baner_absolute_card_text">
-                        Đặt hẹn
+                </a>
+                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+                    class="header__home_baner_absolute_card">
+                    <div class="header__home_baner_absolute_card_body">
+                        <img loading="lazy" width="50%" height="auto" src="<?php echo $local ?>/images/icons/icon_10.webp"
+                            alt="...">
+                        <div class="header__home_baner_absolute_card_text">
+                            Đặt hẹn
+                        </div>
                     </div>
-                </div>
 
-            </a>
+                </a>
+                <?php include "layout/sider_bar.php" ?>
+            </div>
+            <marquee style="scroll-behavior: smooth; background-color: white; padding: 2px; " scrollamount="3">
+                <p style="color: #333">Chú ý: Nếu cần hỗ trợ <strong style="color:red">chẩn đoán tình trạng sức khỏe và tư vấn chi phí online </strong>, khách hàng có thể <strong style="color:red"> chat trực tiếp hoặc để lại số điện thoại </strong> để được tư vấn miễn phí. Hotline: <strong style="color:red">035.685.1116</strong></p>
+            </marquee>
         </div>
         <div style="width: 100%; display: flex; align-items: center; justify-content: center;" class="swiper-slide">
             <div
@@ -159,10 +165,26 @@
 
 <script>
     const isGioiThieu = "<?php echo basename($_SERVER['PHP_SELF']); ?>" === "gioi-thieu-bac-si.php";
-
+    const isLichKham = "<?php echo basename($_SERVER['PHP_SELF']); ?>" === "lich-kham.php";
+    if (isLichKham) {
+        document.querySelectorAll('.header__home_baner').forEach(a => {
+            a.style.marginTop = "61px";
+        });
+    }
     if (isGioiThieu) {
         document.querySelectorAll('.header__home_baner').forEach(a => {
             a.style.display = "none";
         });
     }
+    const banner = document.querySelector(".header__home_baner_absolute");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 60) {
+            banner.classList.add("show");
+        } else {
+            banner.classList.remove("show");
+        }
+
+    });
 </script>

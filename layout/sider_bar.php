@@ -3,7 +3,7 @@
  <img loading="lazy" onclick="hidenSidebar()" class="header__mobile-top-left-icon-close"
      src="<?php echo $local ?>/images/icons/icon_close1.webp" width="35px" height="auto" alt="..."></img>
 
- <ul class="sidebar_mobile">
+ <ul class="sidebar_mobile sidebar_instance">
      <li>
          <a href="<?php echo $local ?>/home.html">Giới thiệu</a>
      </li>
@@ -15,10 +15,10 @@
          <a href="<?php echo $local ?>/lich-kham.php">lịch khám bệnh viện</a>
      </li>
      <li>
-         <a href="tel:02877779888">tư vấn trực tuyến</a>
+         <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">tư vấn trực tuyến</a>
      </li>
      <li>
-         <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">đặt lịch</a>
+         <a href="tel:0968063109">đặt lịch</a>
      </li>
 
  </ul>
@@ -56,7 +56,7 @@
          height: 90vh;
          width: 280px;
          z-index: 1000;
-         background-color: #449ea7ff;
+         background-color: #459498;
          backdrop-filter: blur(10px);
          box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
          color: white;
@@ -171,24 +171,37 @@
 
  <script>
      function showSidebar() {
-         const sidebar = document.querySelector('.sidebar_mobile');
-         const icons_menu = document.querySelector('.header__mobile-top-left-icon');
-         const icons_sclose = document.querySelector('.header__mobile-top-left-icon-close');
-         sidebar.classList.add('active_mobile');
-         sidebar.classList.remove('inactive_mobile');
-         icons_menu.style.display = "none";
-         icons_sclose.style.display = "block"
+
+         const sidebars = document.querySelectorAll('.sidebar_instance');
+         const icons_menu = document.querySelectorAll('.header__mobile-top-left-icon');
+         const icons_close = document.querySelectorAll('.header__mobile-top-left-icon-close');
+
+         sidebars.forEach(sidebar => {
+             sidebar.classList.add('active_mobile');
+             sidebar.classList.remove('inactive_mobile');
+         });
+
+         icons_menu.forEach(i => i.style.display = "none");
+         icons_close.forEach(i => i.style.display = "block");
+
      }
 
      function hidenSidebar() {
-         const sidebar = document.querySelector('.sidebar_mobile');
-         const icons_menu = document.querySelector('.header__mobile-top-left-icon');
-         const icons_sclose = document.querySelector('.header__mobile-top-left-icon-close');
-         sidebar.classList.add('inactive_mobile');
-         setTimeout(() => {
-             sidebar.classList.remove('active_mobile');
-         }, 500);
-         icons_menu.style.display = "block";
-         icons_sclose.style.display = "none"
+
+         const sidebars = document.querySelectorAll('.sidebar_instance');
+         const icons_menu = document.querySelectorAll('.header__mobile-top-left-icon');
+         const icons_close = document.querySelectorAll('.header__mobile-top-left-icon-close');
+
+         sidebars.forEach(sidebar => {
+             sidebar.classList.add('inactive_mobile');
+
+             setTimeout(() => {
+                 sidebar.classList.remove('active_mobile');
+             }, 500);
+         });
+
+         icons_menu.forEach(i => i.style.display = "block");
+         icons_close.forEach(i => i.style.display = "none");
+
      }
  </script>

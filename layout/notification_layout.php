@@ -59,14 +59,14 @@
 </style>
 
 <div id="notification" class="notification"></div>
-<div id="unlockSound" style="position:fixed;inset:0;z-index:999;opacity:0;"></div>
-<audio id="notiSound" src="/images/ting.mp3"></audio>
+<!-- <div id="unlockSound" style="position:fixed;inset:0;z-index:999;opacity:0;"></div>
+<audio id="notiSound" src="/images/ting.mp3"></audio> -->
 <script>
-    document.getElementById("unlockSound").addEventListener("click", () => {
-        const audio = document.getElementById("notiSound");
-        audio.play().catch(() => {});
-        document.getElementById("unlockSound").remove();
-    });
+    // document.getElementById("unlockSound").addEventListener("click", () => {
+    //     const audio = document.getElementById("notiSound");
+    //     audio.play().catch(() => {});
+    //     document.getElementById("unlockSound").remove();
+    // });
     const notification = document.getElementById('notification');
 
     // Danh sách thông điệp
@@ -120,13 +120,13 @@
         notification.classList.remove('slide-up');
         notification.classList.add('slide-down');
         // Play sound
-        const sound = document.getElementById('notiSound');
+        //const sound = document.getElementById('notiSound');
 
         // Gán lại src bằng PHP
-        sound.src = "<?php echo $local ?>/images/ting.mp3";
+        //sound.src = "<?php echo $local ?>/images/ting.mp3";
 
-        sound.currentTime = 0;
-        sound.play();
+        //sound.currentTime = 0;
+        //sound.play();
     }
 
     function hideNotification() {
