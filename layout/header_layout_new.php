@@ -2,7 +2,7 @@
     <div class="header_mobile_container">
         <div class="header_mobile_container-body">
             <a href="<?php echo $local ?>/home.html">
-                <img style="background-color: white; border-radius: 50%;" loading="lazy" width="40px" height="auto"
+                <img style="background-color: white; border-radius: 50%;" loading="lazy" width="40" height="40"
                     src="<?php echo $local ?>/images/logo/icon_logo.webp" alt="...">
             </a>
             <div style="color: white; text-align: center; font-size: 14px; "><span
