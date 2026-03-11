@@ -63,8 +63,8 @@ $dbReadTotalTime = ($dbReadEndTime - $dbReadStarTime) / 1e+6;
 
 header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-$local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
-// $local = 'https://phongkhamchuyenkhoaandong.vn'
+// $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
+$local = 'https://phongkhamchuyenkhoaandong.vn'
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -85,12 +85,6 @@ $local = 'http://localhost/_andong/phongkhamchuyenkhoaandong.vn'
         <link rel="stylesheet" href="css/@media.min.css">
         <link rel="stylesheet" href="css/hethong_layout.min.css">
     </noscript>
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    </noscript>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
         function updateHeaderStylesheet() {

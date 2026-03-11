@@ -1,4 +1,8 @@
 <?php include_once "inc/header.php" ?>
+<link rel="preload" href="css/danh_muc.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
+<noscript>
+    <link rel="stylesheet" href="css/danh_muc.min.css">
+</noscript>
 <?php
 $current_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
 $current_url .= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -56,8 +60,6 @@ function setTitleAndScroll()
 }
 setTitleAndScroll();
 ?>
-
-<link rel="stylesheet" href="css/danh_muc.min.css">
 
 </head>
 
@@ -125,7 +127,7 @@ setTitleAndScroll();
                                 <?php echo $getPostDetail['tieu_de'] ?>
                             </h1>
 
-                            <div id="cardbs" class="swiper swiper-1 ">
+                            <div id="cardbs">
                                 <div
                                     style="padding: 10px; display: flex; align-items: center; justify-content: space-between; background-color: aliceblue; ">
                                     <div style="display: flex; align-items: center; gap: 2px; ">
@@ -147,58 +149,6 @@ setTitleAndScroll();
                                         Lượt xem: ...
                                     </div>
                                 </div>
-                                <!-- <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="cardbs">
-                                            <div class="cardbs__body">
-                                                <div class="cardbs__body-left">
-                                                    <img loading="lazy" width="100%"
-                                                        src="<?php echo $local ?>/images/icons/icon_bs.webp" alt="...">
-                                                </div>
-                                                <div class="cardbs__body-right">
-                                                    <div class="cardbs__body-right-bs">
-                                                        BS VÕ MINH NGUYỄN
-                                                    </div>
-                                                    <div class="cardbs__body-right-ck">
-                                                        Chuyên khoa ngoại
-                                                    </div>
-                                                    <div class="cardbs__body-right-ct">
-                                                        Từng công tác tại Bệnh viện Chuyên khoa Xanh Pôn Hà Nội
-                                                    </div>
-                                                    <a style="display: flex; align-items: center; justify-content: flex-end;"
-                                                        href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">xem
-                                                        thêm...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="cardbs">
-                                            <div class="cardbs__body">
-                                                <div class="cardbs__body-left">
-                                                    <img loading="lazy" width="100%"
-                                                        src="<?php echo $local ?>/images/icons/icon_bs1.webp" alt="...">
-                                                </div>
-                                                <div class="cardbs__body-right">
-                                                    <div class="cardbs__body-right-bs">
-                                                        BS NGUYỄN BẠCH VÂN THỦY
-                                                    </div>
-                                                    <div class="cardbs__body-right-ck">
-                                                        Chuyên khoa ngoại
-                                                    </div>
-                                                    <div class="cardbs__body-right-ct">
-                                                        Từng công tác tại Bệnh viện Quận Thủ Đức
-                                                    </div>
-                                                    <a style="display: flex; align-items: center; justify-content: flex-end;"
-                                                        href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">xem
-                                                        thêm...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- Add Pagination -->
-                                <!-- <div class="swiper-pagination"></div> -->
 
                             </div>
                             <div id="bai-viet" class="body-placeholder">

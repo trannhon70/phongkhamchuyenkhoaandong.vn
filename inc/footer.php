@@ -173,29 +173,7 @@
      deleteComponent()
  </script>
 
- <script defer>
-     var swiper = new Swiper('.swiper-2', {
-         loop: true,
-         autoplay: {
-             delay: 3000
-         },
-         pagination: {
-             el: '.swiper-pagination',
-             clickable: true
-         },
 
-     });
-     var swiper1 = new Swiper('.swiper-1', {
-         loop: true,
-         autoplay: {
-             delay: 5000,
-         },
-         pagination: {
-             el: '.swiper-1 .swiper-pagination',
-             clickable: true,
-         },
-     });
- </script>
  </body>
 
  </html>

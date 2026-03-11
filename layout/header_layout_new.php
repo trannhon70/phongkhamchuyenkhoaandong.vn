@@ -55,7 +55,7 @@
 
             </a>
         </div>
-        <div style="width: 100%; display: flex; align-items: center; justify-content: center;" class="swiper-slide">
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
             <div
                 style="display: flex; align-items: center; justify-content: center; width: 100%;  box-sizing: border-box; max-width: 100%; position: relative;">
                 <img loading="lazy" width="100%" style="object-fit: scale-down;"

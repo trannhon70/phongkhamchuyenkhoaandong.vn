@@ -115,7 +115,7 @@
                 <p style="color: #333">Chú ý: Nếu cần hỗ trợ <strong style="color:red">chẩn đoán tình trạng sức khỏe và tư vấn chi phí online </strong>, khách hàng có thể <strong style="color:red"> chat trực tiếp hoặc để lại số điện thoại </strong> để được tư vấn miễn phí. Hotline: <strong style="color:red">035.685.1116</strong></p>
             </marquee>
         </div>
-        <div style="width: 100%; display: flex; align-items: center; justify-content: center;" class="swiper-slide">
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
             <div
                 style="display: flex; align-items: center; justify-content: center; width: 100%;  box-sizing: border-box; max-width: 100%; position: relative;">
                 <img loading="lazy" width="100%" style="object-fit: scale-down;"
@@ -147,19 +147,13 @@
                 alt="...">
         </div>
     </div>
-    <div class="header__mobile_banner swiper swiper-2">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_mobile.webp"
-                    alt="Banner 1">
-            </div>
-            <!-- <div class="swiper-slide">
-                <img loading="lazy" width="100%" height="100%"
-                    src="<?php echo $local ?>/images/banner/banner_mobile_2t9.webp" alt="Banner 2">
-            </div> -->
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+    <div class="header__mobile_banner ">
+
+        <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_mobile.webp"
+            alt="Banner 1">
+    </div>
+
+
     </div>
 </header>
 
