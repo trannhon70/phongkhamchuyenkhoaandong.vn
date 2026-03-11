@@ -74,7 +74,7 @@ $local = 'https://phongkhamchuyenkhoaandong.vn'
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="index, follow">
 
-    <link rel="preload" fetchpriority="high" as="image" href="<?php echo $local ?>/images/banner/banner_mobile.webp"
+    <link rel="preload" fetchpriority="high" as="image" href="<?php echo $local ?>/images/banner/1.webp"
         type="image/webp">
     <link rel="icon" href="<?php echo $local ?>/images/logo/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>

@@ -118,7 +118,7 @@
         <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
             <div
                 style="display: flex; align-items: center; justify-content: center; width: 100%;  box-sizing: border-box; max-width: 100%; position: relative;">
-                <img loading="lazy" width="100%" style="object-fit: scale-down;"
+                <img fetchpriority="high" decoding="async" width="100%" style="object-fit: scale-down;"
                     src="<?php echo $local ?>/images/banner/1.webp" alt="...">
                 <div style="position: absolute; left:0; bottom: 0; height: 85px; width: 100%;display: flex; ">
                     <a style=" width: 50%; display: block; height: 85px;" href="tel:0968063109"></a>
@@ -149,7 +149,7 @@
     </div>
     <div class="header__mobile_banner ">
 
-        <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_mobile.webp"
+        <img fetchpriority="high" decoding="async" width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_mobile.webp"
             alt="Banner 1">
     </div>
 
