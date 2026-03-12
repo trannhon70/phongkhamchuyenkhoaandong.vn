@@ -72,7 +72,7 @@
     // Danh sách thông điệp
     const messages = [
         `<a style="display: flex; justify-content: space-between; "
-    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+    href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
     <div style="display: flex; align-items: center; gap: 10px; ">
         <img width="35" height="35" src="<?php echo $local ?>/images/icons/icon_zalo_noti.webp" alt="...">
         <div style="font-size: 14px; color: white; font-weight: 600;line-height: 20px; ">
@@ -81,31 +81,31 @@
     </div>
     <div style="font-size: 10px; color: white; font-weight: 300; width: 50px ">bây giờ</div>
 </a>`,
-        `<a style="display: flex; align-items: center; gap: 10px;  " href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        `<a style="display: flex; align-items: center; gap: 10px;  " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
     <img width="35" height="35" src="<?php echo $local ?>/images/icons/icon_zalo_noti.webp" alt="...">
     <div style="font-size: 14px; color: white; font-weight: 600; line-height: 20px;" >
        Nếu bài viết chưa giải đáp, liên hệ bác sĩ ngay.
     </div>
 </a>`,
-        `<a style="display: flex; align-items: center; gap: 10px; " href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        `<a style="display: flex; align-items: center; gap: 10px; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
     <img width="35" height="35" src="<?php echo $local ?>/images/icons/icon_zalo_noti.webp" alt="...">
     <div style="font-size: 14px; color: white; font-weight: 600;line-height: 20px; " >
        Bác sĩ sẽ giúp đánh giá tình trạng và đưa ra lời khuyên.
     </div>
 </a>`,
-        `<a style="display: flex; align-items: center; gap: 10px; " href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        `<a style="display: flex; align-items: center; gap: 10px; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
     <img width="35" height="35" src="<?php echo $local ?>/images/icons/icon_zalo_noti.webp" alt="...">
     <div style="font-size: 14px; color: white; font-weight: 600;line-height: 20px; " >
        Đừng lo, bác sĩ sẽ lắng nghe và hỗ trợ bạn.
     </div>
 </a>`,
-        `<a style="display: flex; align-items: center; gap: 10px; " href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        `<a style="display: flex; align-items: center; gap: 10px; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
     <img width="35" height="35" src="<?php echo $local ?>/images/icons/icon_zalo_noti.webp" alt="...">
     <div style="font-size: 14px; color: white; font-weight: 600;line-height: 20px; " >
        10 lần tìm kiếm không bằng 1 lần tư vấn trực tiếp. Nhắn tin để được giải đáp ngay.
     </div>
 </a>`,
-        `<a style="display: flex; align-items: center; gap: 10px; " href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        `<a style="display: flex; align-items: center; gap: 10px; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
     <img width="35" height="35" src="<?php echo $local ?>/images/icons/icon_zalo_noti.webp" alt="...">
     <div style="font-size: 14px; color: white; font-weight: 600;line-height: 20px; " >
        Nhấn để tư vấn, đừng trì hoãn sức khỏe!

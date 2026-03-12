@@ -97,7 +97,7 @@ setTitleAndScroll();
                                 <div>Chi phí đốt sùi bao nhiêu?</div>
                             </a>
                         </div>
-                        <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+                        <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"
                             class="category__left-promotion">
                             <img width="100%" height="auto" loading="lazy"
                                 src="<?php echo $local ?>/images/background/bg_khuyenmai.webp" alt="...">
@@ -157,7 +157,7 @@ setTitleAndScroll();
                             <div class="bai-viet-footer">Nội dung bài viết cung cấp nhằm mục đích tham khảo thêm kiến thức y tế,
                                 một số nội dung có thể không thuộc nghiệp vụ của phòng khám chúng tôi, Hiệu quả của việc hỗ trợ
                                 điều trị phụ thuộc vào cơ địa của mỗi người. Cần biết thông tin liên hệ để được tư vấn trực
-                                tuyến miễn phí.<a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">[TƯ VẤN
+                                tuyến miễn phí.<a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">[TƯ VẤN
                                     TRỰC TUYẾN]</a>
                             </div>
                     </div>
@@ -235,7 +235,10 @@ setTitleAndScroll();
                             imgElements[i].style.setProperty('display', 'block', 'important');
                             let divWrapper = document.createElement('a');
                             divWrapper.className = 'glow-on-hover';
-                            divWrapper.href = "https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en";
+                            divWrapper.href = "javascript:void(0)";
+                            divWrapper.addEventListener("click", function() {
+                                openZoosUrl('chatwin');
+                            });
                             imgElements[i].parentNode.insertBefore(divWrapper, imgElements[i]);
                             divWrapper.appendChild(imgElements[i])
                         }

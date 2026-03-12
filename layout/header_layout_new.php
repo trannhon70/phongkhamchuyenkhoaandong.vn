@@ -43,7 +43,7 @@
                 </div>
 
             </a>
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+            <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"
                 class="header__home_baner_absolute_card">
                 <div class="header__home_baner_absolute_card_body">
                     <img loading="lazy" width="60%" height="auto" src="<?php echo $local ?>/images/icons/icon_10.webp"
@@ -63,7 +63,7 @@
                 <div style="position: absolute; left:0; bottom: 0; height: 85px; width: 100%;display: flex; ">
                     <a style=" width: 50%; display: block; height: 85px;" href="tel:0968063109"></a>
                     <a style=" width: 50%;  display: block; height: 85px;"
-                        href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                        href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
                 </div>
             </div>
         </div>

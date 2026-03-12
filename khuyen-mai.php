@@ -28,7 +28,7 @@
                             <div class="endow__container-row-left">
                                 <img loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/goi_kham.webp" alt="...">
                             </div>
-                           
+
                             <div class="endow__container-row-left">
                                 <img loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/goi_kham2.webp" alt="...">
                             </div>
@@ -43,13 +43,13 @@
                     <div class="endow__container-rowMB">
                         <div class="endow__container-row ">
                             <div class="endow__container-row-item endow__container-row-item-active">
-                                <img  width="270px" src="<?php echo $local ?>/images/khuyen_mai/goi_kham.webp" alt="...">
+                                <img width="270px" src="<?php echo $local ?>/images/khuyen_mai/goi_kham.webp" alt="...">
                             </div>
                             <!-- <div class="endow__container-row-item ">
                                 <img  width="270px" src="<?php echo $local ?>/images/khuyen_mai/goi_kham1.webp" alt="...">
                             </div> -->
                             <div class="endow__container-row-item ">
-                                <img  width="270px" src="<?php echo $local ?>/images/khuyen_mai/goi_kham2.webp" alt="...">
+                                <img width="270px" src="<?php echo $local ?>/images/khuyen_mai/goi_kham2.webp" alt="...">
                             </div>
                         </div>
                         <div class="endow__container-pagi">
@@ -62,36 +62,36 @@
             </section>
             <section class="endow_1">
             </section>
-            <section class="method" >
-                <div class="method__container" >
+            <section class="method">
+                <div class="method__container">
                     <img class="method__container-img" loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap.webp" alt="...">
-                    <div class="method__container-list" >
-                        <div class="method__container-list-item method__container-list-item-active" >
-                            <img  width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap_1.webp" alt="...">
+                    <div class="method__container-list">
+                        <div class="method__container-list-item method__container-list-item-active">
+                            <img width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap_1.webp" alt="...">
                         </div>
-                        <div class="method__container-list-item " >
-                            <img  width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap_2.webp" alt="...">
+                        <div class="method__container-list-item ">
+                            <img width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap_2.webp" alt="...">
                         </div>
-                        <div class="method__container-list-item " >
-                            <img  width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap_3.webp" alt="...">
+                        <div class="method__container-list-item ">
+                            <img width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/phuong_phap_3.webp" alt="...">
                         </div>
                     </div>
-                    <div class="method__container-pagi" >
-                        <div class="method__container-pagi-item method__container-pagi-item-active" ></div>
-                        <div class="method__container-pagi-item" ></div>
-                        <div class="method__container-pagi-item" ></div>
+                    <div class="method__container-pagi">
+                        <div class="method__container-pagi-item method__container-pagi-item-active"></div>
+                        <div class="method__container-pagi-item"></div>
+                        <div class="method__container-pagi-item"></div>
                     </div>
                     <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/bang_chi_phi.webp" alt="...">
                 </div>
             </section>
             <section class="team">
                 <div class="team__container">
-                   <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/giay_phep_hoat_dong.webp" alt="...">
-                  
+                    <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/giay_phep_hoat_dong.webp" alt="...">
+
                 </div>
             </section>
             <section class="teamMB">
-                 <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/giay_phep_hoat_dong.webp" alt="...">
+                <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/giay_phep_hoat_dong.webp" alt="...">
 
             </section>
             <section class="clinic">
@@ -103,7 +103,7 @@
                     </div>
 
                 </div>
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="clinic__container-bottom">
+                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="clinic__container-bottom">
                     <img loading="lazy" width="auto" height="auto" src="<?php echo $local ?>/images/khuyen_mai/button_lien_he.webp" alt="...">
                 </a>
             </section>
@@ -127,7 +127,7 @@
                 <div class="clinicMB_flex">
                     <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/img_time.webp" alt="...">
                 </div>
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="clinicMB_flex">
+                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="clinicMB_flex">
                     <img loading="lazy" width="70%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/button_lien_he.webp" alt="...">
                 </a>
             </section>
@@ -145,9 +145,9 @@
                                 <div class="consultation__container-row-left-body-input">
                                     <input type="number" placeholder="Số điện thoại">
                                 </div>
-                                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="consultation__container-row-left-body-button">
+                                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="consultation__container-row-left-body-button">
                                     <img loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/button_dang_ky.webp" alt="...">
-</a>
+                                </a>
                             </div>
                         </div>
                         <div class="consultation__container-row-right">
@@ -165,14 +165,14 @@
                     <img width="100%" height="auto" loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/img_uudai.webp" alt="...">
                 </div>
                 <div id="form1" class="consultation__container-row-left-body">
-                  
-                    <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="consultation__container-row-left-body-button">
+
+                    <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="consultation__container-row-left-body-button">
                         <img loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/button_dang_ky.webp" alt="...">
                     </a>
                 </div>
                 <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/tu_van_1.webp" alt="...">
             </section>
-            
+
             <section class="map">
                 <img loading="lazy" width="100%" height="auto" src="<?php echo $local ?>/images/khuyen_mai/map.webp" alt="...">
                 <div class="map__container">
@@ -192,12 +192,12 @@
         </article>
     </main>
 
-    <script defer >
-         const itemsMethod = document.querySelectorAll('.method__container-list-item')
-         const pagiMethodItems = document.querySelectorAll('.method__container-pagi-item');
-         let currentMethod = 0
+    <script defer>
+        const itemsMethod = document.querySelectorAll('.method__container-list-item')
+        const pagiMethodItems = document.querySelectorAll('.method__container-pagi-item');
+        let currentMethod = 0
 
-         function changeSlide1(index) {
+        function changeSlide1(index) {
             itemsMethod[currentMethod].classList.remove('method__container-list-item-active');
             pagiMethodItems[currentMethod].classList.remove('method__container-pagi-item-active');
             currentMethod = index;
@@ -218,7 +218,7 @@
         }, 5000);
     </script>
 
-    <script defer >
+    <script defer>
         const itemsCus = document.querySelectorAll('.endow__container-row-item')
         const pagiItems = document.querySelectorAll('.endow__container-pagi-itemMB');
         let current = 0
