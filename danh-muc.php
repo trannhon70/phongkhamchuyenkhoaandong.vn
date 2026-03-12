@@ -165,6 +165,9 @@ setTitleAndScroll();
                     <div><?php echo $getPostDetail ?></div>
                 <?php } ?>
                 </div>
+                <a class="show-mobile-chat" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
+                    <img loading="lazy" width="400" height="300" style="width: 100%; height: 100%; object-fit:scale-down" src="<?php echo $local ?>/images/banner/2.webp" alt="...">
+                </a>
                 <?php include_once "./layout/hethong_layout.php" ?>
             </article>
         </main>
