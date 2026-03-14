@@ -75,8 +75,25 @@
      </div>
  </section>
 
+ <div class="icon__list">
+     <a id="openModalKM" class="icon__list-item">
+         <img loading="lazy" width="45px" height="45px" src="<?php echo $local ?>/images/icons_chat/icon_happy.gif"
+             alt="...">
+     </a>
+     <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="icon__list-item1">
+         <img loading="lazy" width="45px" height="45px" src="<?php echo $local ?>/images/icons_chat/icon_message.webp"
+             alt="...">
+         <div class="ping"></div>
+         <p class="randum__number">
+             10
+         </p>
+     </a>
+
+ </div>
+
  <?php include_once './layout/modalKhuyenMai.php' ?>
  <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
+ <script defer language="javascript" src="<?php echo $local ?>/js/random_number.min.js"></script>
  <script>
      // xóa component khi ở lich-kham
      const currentPage = "<?php echo basename($_SERVER['PHP_SELF']); ?>";
