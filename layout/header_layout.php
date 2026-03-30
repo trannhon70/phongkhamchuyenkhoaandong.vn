@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="header__banner">
+    <div style="width: 1000px; margin: 0 auto;" class="header__banner">
         <img width="100%" height="100%" src="<?php echo $local ?>/images/banner/banner_pc.webp" alt="...">
     </div>
 </header>
