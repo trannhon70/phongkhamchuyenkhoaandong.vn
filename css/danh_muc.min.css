@@ -872,20 +872,23 @@
 .post_connection_title {
     font-size: 18px;
     font-weight: 700;
-    color: #0077c7;
+    color: #06273b;
 }
 
 .post_connection_item {
     display: block;
     text-decoration: none;
-    padding: 10px 0px;
+    padding: 10px;
     box-sizing: border-box;
-    color: black;
-    border-bottom: 1px dashed #0077c7;
+    background-color: #f1f0f5;
+    color: #06273b;
     font-size: 14px;
     white-space: nowrap; /* không xuống dòng */
     overflow: hidden; /* ẩn phần dư */
     text-overflow: ellipsis; /* hiển thị ... */
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: 700;
 }
 
 .post_connection_item:hover {

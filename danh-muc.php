@@ -161,7 +161,8 @@ setTitleAndScroll();
                 <?php } ?>
                 </div>
                 <div class="post_connection">
-                    <div class="post_connection_title">Danh sách bài viết liên quan :</div>
+                    <div class="post_connection_title">Danh sách bài viết liên quan </div>
+                    <hr style="margin-top: 10px;">
                     <?php foreach ($post_connection as $index => $item) { ?>
                         <a class="post_connection_item" href="<?php echo $item["slug"] ?>.html"><span><?php echo $index + 1; ?> .</span> <?php echo $item['title']; ?></a>
                     <?php } ?>
