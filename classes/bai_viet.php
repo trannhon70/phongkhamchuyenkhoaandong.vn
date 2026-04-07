@@ -118,7 +118,7 @@ class post
     }
   }
 
-  public function getTotalCount($tieuDe,$IdBenh)
+  public function getTotalCount($tieuDe, $IdBenh)
   {
     $tieuDe = mysqli_real_escape_string($this->db->link, $tieuDe);
     if ($tieuDe !== '' || $IdBenh !== '') {
@@ -141,14 +141,12 @@ class post
     $resultBenh = $this->db->select($queryBenh);
     $rowBenh = $resultBenh->fetch_assoc();
     $id_benh = $rowBenh['id'];
-    if($resultBenh){
-$query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh' ";
-    $result = $this->db->select($query);
-    $row = $result->fetch_assoc();
-    return $row['total'];
+    if ($resultBenh) {
+      $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh' ";
+      $result = $this->db->select($query);
+      $row = $result->fetch_assoc();
+      return $row['total'];
     }
-
-    
   }
 
   public function update_baiviet($data, $files, $id)
@@ -234,6 +232,30 @@ $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh
     } else {
       return null;
     }
+  }
+
+  public function post_connection($id_khoa, $slug)
+  {
+    $id_khoa = mysqli_real_escape_string($this->db->link, $id_khoa);
+    $slug = mysqli_real_escape_string($this->db->link, $slug);
+
+    $query = "SELECT slug, title 
+              FROM admin_baiviet 
+              WHERE id_khoa='$id_khoa'
+              AND slug != '$slug'
+              ORDER BY RAND()
+              LIMIT 5";
+
+    $result = $this->db->select($query);
+
+    $data = [];
+    if ($result) {
+      while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
+      }
+    }
+
+    return $data;
   }
 
   public function getAllDanhSachBaiVietNew($khoa)
@@ -357,12 +379,13 @@ $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh
     return $result;
   }
 
-  public function getBaiVietDauTienByBenh ($slug_benh){
-   
+  public function getBaiVietDauTienByBenh($slug_benh)
+  {
+
     $slug_benh = mysqli_real_escape_string($this->db->link, $slug_benh);
     $querybenh = "SELECT * FROM admin_benh WHERE slug = '$slug_benh' LIMIT 1 ";
     $resultBenh = $this->db->select($querybenh);
-    if($resultBenh){
+    if ($resultBenh) {
       $benh = $resultBenh->fetch_assoc();
       $id = $benh['id'];
       $query = "SELECT baiviet.id, baiviet.title, baiviet.slug, baiviet.tieu_de, baiviet.id_benh,baiviet.id_khoa, baiviet.content, ,baiviet.img,baiviet.descriptions,baiviet.keyword,baiviet.hiden,
@@ -381,12 +404,11 @@ $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh
         return 'Hiện tại dữ liệu này chưa có bài viết!';
       }
     }
-   
   }
 
   public function updateHiden($data)
   {
-   
+
     $id = mysqli_real_escape_string($this->db->link, $data['id']);
     $hiden = mysqli_real_escape_string($this->db->link, $data['hiden']);
     $query = "UPDATE admin_baiviet SET hiden = '$hiden' WHERE id = '$id'";

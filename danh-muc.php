@@ -9,11 +9,11 @@ $current_url .= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $slug = basename(parse_url($current_url, PHP_URL_PATH), '.html');
 
 $getPostDetail = null;
-
 $postDetail = $bai_viet->getBaiViet_bySlug($slug);
 
 if (isset($postDetail) && isset($postDetail['name_khoa'])) {
     $getPostDetail = $postDetail;
+    $post_connection = $bai_viet->post_connection($postDetail['id_khoa'], $slug);
 } else {
     $postTinTuc = $bai_viet->getBaiVietDauTienByBenh($slug);
     if ($postTinTuc) {
@@ -164,6 +164,13 @@ setTitleAndScroll();
                 <?php } else { ?>
                     <div><?php echo $getPostDetail ?></div>
                 <?php } ?>
+                </div>
+                <div class="post_connection">
+                    <div class="post_connection_title">Danh sách bài viết liên quan :</div>
+                    <?php foreach ($post_connection as $index => $item) { ?>
+                        <a class="post_connection_item" href="<?php echo $item["slug"] ?>.html"><span><?php echo $index + 1; ?> .</span> <?php echo $item['title']; ?></a>
+                    <?php } ?>
+
                 </div>
                 <a class="show-mobile-chat" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                     <img loading="lazy" width="400" height="300" style="width: 100%; height: 100%; object-fit:scale-down" src="<?php echo $local ?>/images/banner/2.webp" alt="...">

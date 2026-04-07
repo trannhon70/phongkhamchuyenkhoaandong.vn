@@ -863,3 +863,33 @@
         display: block;
     }
 }
+
+.post_connection {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.post_connection_title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0077c7;
+}
+
+.post_connection_item {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    color: black;
+    border-bottom: 1px dashed #0077c7;
+    font-size: 14px;
+    white-space: nowrap; /* không xuống dòng */
+    overflow: hidden; /* ẩn phần dư */
+    text-overflow: ellipsis; /* hiển thị ... */
+}
+
+.post_connection_item:hover {
+    background-color: #0077c7;
+    color: white;
+    font-weight: 700;
+}
