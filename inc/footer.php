@@ -126,11 +126,10 @@
 
          // Thêm script mới dựa trên kích thước cửa sổ
          if (window.innerWidth < 1000) {
-             const mobileScripts = [
-                 // {
-                 //      src: 'js/random_number.min.js',
-                 //      id: 'mobile-0'
-                 //  },
+             const mobileScripts = [{
+                     src: 'js/carousel.min.js',
+                     id: 'mobile-0'
+                 },
 
 
              ];

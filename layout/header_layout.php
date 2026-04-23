@@ -115,17 +115,54 @@
                 <p style="color: #333">Chú ý: Nếu cần hỗ trợ <strong style="color:red">chẩn đoán tình trạng sức khỏe và tư vấn chi phí online </strong>, khách hàng có thể <strong style="color:red"> chat trực tiếp hoặc để lại số điện thoại </strong> để được tư vấn miễn phí. Hotline: <strong style="color:red">035.685.1116</strong></p>
             </marquee>
         </div>
-        <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
-            <div
-                style="display: flex; align-items: center; justify-content: center; width: 100%;  box-sizing: border-box; max-width: 100%; position: relative;">
-                <img fetchpriority="high" decoding="async" width="100%" style="object-fit: scale-down;"
-                    src="<?php echo $local ?>/images/banner/1.webp" alt="...">
-                <div style="position: absolute; left:0; bottom: 0; height: 85px; width: 100%;display: flex; ">
-                    <a style=" width: 50%; display: block; height: 85px;" href="tel:0968063109"></a>
-                    <a style=" width: 50%;  display: block; height: 85px;"
-                        href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+        <div class="carousel" id="carousel">
+            <div class="carousel-track">
+
+                <!-- Slide 1 (LCP) -->
+                <div class="slide">
+                    <div style="position:relative;width:100%;max-width:100%;">
+
+                        <img
+                            src="<?php echo $local ?>/images/banner/1.webp"
+                            fetchpriority="high"
+                            decoding="async"
+                            width="1920"
+                            height="600"
+                            style="width:100%;object-fit:cover;"
+                            alt="banner phòng khám">
+
+                        <div style="position:absolute;left:0;bottom:0;height:85px;width:100%;display:flex;">
+                            <a style="width:50%;display:block;height:85px;" href="tel:0968063109"></a>
+                            <a style="width:50%;display:block;height:85px;"
+                                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Slide 1 (LCP) -->
+                <div class="slide">
+                    <div style="position:relative;width:100%;max-width:100%;">
+
+                        <img
+                            src="<?php echo $local ?>/images/banner/3.webp"
+                            decoding="async"
+                            width="1920"
+                            height="600"
+                            style="width:100%;object-fit:cover;"
+                            alt="banner phòng khám">
+
+                        <div style="position:absolute;left:0;bottom:0;height:85px;width:100%;display:flex;">
+                            <a style="width:50%;display:block;height:85px;" href="tel:0968063109"></a>
+                            <a style="width:50%;display:block;height:85px;"
+                                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+            <button style=" display:none;" class="nav prev">❮</button>
+            <button style="display:none;" class="nav next">❯</button>
+            <div class="dots"></div>
         </div>
     </div>
 </header>
